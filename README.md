@@ -12,6 +12,7 @@ BDD practice with RSpec.
 * Capybara
 * [Guard RSpec] (https://github.com/guard/guard-rspec)
 * Bootstrap-Sass
+* Authentication with [Devise] (https://github.com/plataformatec/devise)
 
 
 

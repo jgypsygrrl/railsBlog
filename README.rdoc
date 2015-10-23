@@ -15,3 +15,8 @@ Blog App
   - Body
   - User-ID
   - Article-ID
+  
+  Users:
+  - users signup
+  - users login/logout
+  - restrict access to certain features
