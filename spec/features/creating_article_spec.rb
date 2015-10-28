@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.feature "Creating articles" do
+
+  before do
+    @jen = User.create!(email: 'jen@email.com', password: 'password')
+    login_as(@jen)
+  end
+
   scenario "A user creates a new article" do
     visit "/"
 
@@ -12,6 +18,7 @@ RSpec.feature "Creating articles" do
 
     expect(page).to have_content("Your article has been created")
     expect(page.current_path).to eq(articles_path)
+    expect(page).to have_content('Created by: #{@jen.email}')
   end
 
   scenario "A user fails to create a new article" do
