@@ -7,7 +7,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "Blog App", root_path, class: "navbar-brand" %>
+        <%= link_to "BlogIt App", root_path, class: "navbar-brand" %>
       </div>
       <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -19,9 +19,10 @@
                 Signed in as <%= "#{current_user.email}" %>
               </p>
             </div>
+          <% else %>
+            <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+            <li> <%= link_to "Sign In", new_user_session_path %> </li>
           <% end %>
-          <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
-          <li> <%= link_to "Sign In", new_user_session_path %> </li>
         </ul>
       </div>
     </div>

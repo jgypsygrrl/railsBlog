@@ -3,22 +3,22 @@
 
 body {
   padding-top: 70px;
-  background: #D8D8D8;
+  background: #ffffff;
   color: #666666;
 }
 
 .article-title, .article-body {
-  padding-left: 0.7em;
+  //padding-left: 0.7em;
 }
 
 .article-title {
   font-weight: bold;
   font-size: 2.5em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
 }
 
 .article-body {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #new-article-btn {
@@ -74,11 +74,11 @@ body {
 
 .comment-body {
   margin-top: 1em;
-  font-size: x-large;
+  margin-bottom: 1em;
+  font-size: 1em;
 }
 
 .comment-time {
   font-style: italic;
-  font-size: large;
-  margin-left: 1em;
+  font-size: small;
 }
